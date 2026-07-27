@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PROCURA LANKA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Deep Blue
+                        secondary: '#f97316', // Orange
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-white shadow-md transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="logo.png" alt="PROCURA LANKA Logo" class="h-12 w-auto mr-3" onerror="this.src='https://via.placeholder.com/150x50?text=PROCURA+LANKA'">
+                        <span class="font-bold text-2xl text-primary hidden sm:block">PROCURA LANKA</span>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary font-medium transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary font-medium transition duration-300">About Us</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary font-medium transition duration-300">Services</a>
+                    <a href="contact.html" class="text-primary font-bold transition duration-300 border-b-2 border-primary">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <a href="index.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-primary">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-primary">About Us</a>
+            <a href="services.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-primary">Services</a>
+            <a href="contact.html" class="block px-4 py-3 bg-gray-50 text-primary font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow pt-20">
+        <!-- Page Header Banner -->
+        <section class="bg-primary py-16 md:py-20 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">Have questions about our procurement services? Reach out to our team today.</p>
+            </div>
+        </section>
+
+        <!-- Main Contact Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Contact Information Side Panel -->
+                    <div class="bg-primary text-white rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold mb-6 text-white">Let's Connect</h2>
+                            <p class="text-blue-100 mb-8 leading-relaxed">Whether you need custom sourcing, vendor management, or logistics support, our procurement specialists are here to assist.</p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary text-xl mr-4 flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Head Office</h3>
+                                        <p class="text-blue-100 text-sm">123 Business Avenue, World Trade Center Area, Colombo 01, Sri Lanka</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary text-xl mr-4 flex-shrink-0">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Call Us Directly</h3>
+                                        <p class="text-blue-100 text-sm">+94 11 234 5678</p>
+                                        <p class="text-blue-100 text-sm">+94 77 123 4567</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary text-xl mr-4 flex-shrink-0">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Email Us</h3>
+                                        <p class="text-blue-100 text-sm">info@procuralanka.com</p>
+                                        <p class="text-blue-100 text-sm">sales@procuralanka.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary text-xl mr-4 flex-shrink-0">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg">Business Hours</h3>
+                                        <p class="text-blue-100 text-sm">Monday – Friday: 8:30 AM – 5:30 PM</p>
+                                        <p class="text-blue-100 text-sm">Saturday – Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Direct WhatsApp CTA Block -->
+                        <div class="mt-10 p-4 bg-white/10 rounded-xl border border-white/20">
+                            <p class="text-sm text-blue-100 mb-3">Prefer instant communication?</p>
+                            <a href="https://wa.me/94700000000" target="_blank" class="inline-flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-lg transition duration-300 text-sm">
+                                <i class="fab fa-whatsapp text-lg mr-2"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="lg:col-span-2 bg-white rounded-2xl p-8 md:p-10 shadow-xl border border-gray-100">
+                        <h2 class="text-2xl font-bold text-primary mb-2">Send Us a Message</h2>
+                        <p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you within 24 business hours.</p>
+
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="fullName" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                                    <input type="text" id="fullName" required class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="emailAddress" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                                    <input type="email" id="emailAddress" required class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white" placeholder="john@company.com">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phoneNumber" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phoneNumber" class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white" placeholder="+94 77 000 0000">
+                                </div>
+                                <div>
+                                    <label for="serviceType" class="block text-sm font-semibold text-gray-700 mb-2">Service Required</label>
+                                    <select id="serviceType" class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white">
+                                        <option value="">Select a Service</option>
+                                        <option value="strategic-sourcing">Strategic Sourcing</option>
+                                        <option value="supplier-management">Supplier Management</option>
+                                        <option value="logistics">Logistics & Distribution</option>
+                                        <option value="general-inquiry">General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="messageSubject" class="block text-sm font-semibold text-gray-700 mb-2">Subject *</label>
+                                <input type="text" id="messageSubject" required class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white" placeholder="How can we help your business?">
+                            </div>
+
+                            <div>
+                                <label for="messageText" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                                <textarea id="messageText" rows="5" required class="w-full rounded-lg border border-gray-300 p-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition bg-gray-50 focus:bg-white" placeholder="Please provide details regarding your inquiry..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full md:w-auto px-8 py-3.5 bg-secondary hover:bg-orange-600 text-white font-bold rounded-lg transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i> Submit Inquiry
+                            </button>
+                            <p id="formStatus" class="hidden text-sm font-medium text-green-600 mt-3"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map Placeholder / Embed -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-primary">Find Our Office</h2>
+                    <div class="w-16 h-1 bg-secondary mx-auto mt-2"></div>
+                </div>
+                <div class="w-full h-80 rounded-2xl overflow-hidden shadow-md bg-gray-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310579!2d79.82118595!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2592419e07511%3A0x442742f14371dd20!2sColombo%2001%2C%20Colombo!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PROCURA LANKA</h3>
+                    <p class="text-gray-400">Your trusted procurement partner for sourcing, logistics, and supply chain management.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i> info@procuralanka.com</li>
+                        <li><i class="fas fa-phone-alt mr-2"></i> +94 11 234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; <span id="year"></span> PROCURA LANKA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/94700000000" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        // Simple Form Submission Feedback
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.textContent = "Thank you! Your message has been sent successfully. We will get back to you shortly.";
+            status.classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
